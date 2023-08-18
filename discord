@@ -1,0 +1,144 @@
+Passo 1: Estrutura Básica HTML
+Comece criando a estrutura básica da página usando HTML. 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site do Discord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Logo do Discord</div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Recursos</a></li>
+                <!-- Adicione mais itens de menu conforme necessário -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Bem-vindo ao Discord</h1>
+            <p>Uma plataforma de comunicação para gamers.</p>
+            <a href="#" class="btn">Começar</a>
+        </section>
+        <!-- Adicione mais seções conforme necessário -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+Passo 2: Estilizando com CSS
+Agora vamos criar o arquivo styles.css para adicionar estilo à nossa página:
+
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #7289da;
+    padding: 10px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #2c2f33;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7289da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+}
+
+
