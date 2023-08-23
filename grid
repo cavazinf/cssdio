@@ -1,0 +1,79 @@
+HTML:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Vídeos do YouTube</title>
+</head>
+<body>
+    <div class="video-grid">
+        <div class="video">
+            <img src="video1.jpg" alt="Título do Vídeo 1">
+            <h3>Título do Vídeo 1</h3>
+            <p>Visualizações: 100.000</p>
+        </div>
+        <div class="video">
+            <img src="video2.jpg" alt="Título do Vídeo 2">
+            <h3>Título do Vídeo 2</h3>
+            <p>Visualizações: 75.000</p>
+        </div>
+        <!-- Adicione mais vídeos conforme necessário -->
+    </div>
+</body>
+</html>
+CSS (styles.css):
+
+css
+Copy code
+/* Reset de estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Layout de grade responsivo */
+    gap: 20px; /* Espaçamento entre vídeos */
+}
+
+.video {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+}
+
+.video img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.video h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.video p {
+    color: #888;
+    font-size: 14px;
+    margin-top: 5px;
+}
+Este código HTML e CSS cria uma lista de vídeos do YouTube com um layout de grade responsivo usando Grid Layout. Os vídeos são representados como blocos individuais com uma imagem em miniatura, título e número de visualizações. O layout se ajustará automaticamente com base no tamanho da tela do dispositivo.
+
+Você pode adicionar mais vídeos ao HTML conforme necessário, mantendo a mesma estrutura das divs com a classe "video".
+
+Lembre-se de substituir os espaços reservados <img src="video1.jpg" alt="Título do Vídeo 1"> com as imagens e títulos reais dos seus vídeos.
